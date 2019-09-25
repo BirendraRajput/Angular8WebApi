@@ -1,0 +1,121 @@
+<div class="row">
+  <div class="col">
+    <h2></h2>
+  </div>
+</div>
+<div class="row">
+  <div class="col">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col">
+          <div class="card border-secondary mb-3" style="max-width: 18rem;">
+            <div class="card-header">Modal</div>
+            <div class="card-body text-secondary">
+              <h5 class="card-title">Bootstrap</h5>
+              <p class="card-text">Use Bootstrap’s JavaScript modal plugin to add dialogs to your..</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card border-secondary mb-3" style="max-width: 18rem;">
+            <div class="card-header">Angular</div>
+            <div class="card-body text-secondary">
+              <h5 class="card-title">Angular CLI</h5>
+              <p class="card-text">Angular CLI stands for Angular Command Line Interface..</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card border-secondary mb-3" style="max-width: 18rem;">
+            <div class="card-header">Overview</div>
+            <div class="card-body text-secondary">
+              <h5 class="card-title">Components </h5>
+              <p class="card-text">Components and options for laying out your Bootstrap project..</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-3">
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col nav-pills">
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Profile</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Message</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Setting</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Practice</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pharmacy</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Reference</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="col">
+    <div>
+      <ul class="list-group">
+        <li class="list-group-item list-group-item-primary">Detail for all users!</li>
+      </ul>
+    </div>
+    <div class="mb-3">
+      <table class="table table-hover" *ngIf="result.length>0 else loading">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">User Name</th>
+            <th scope="col">Email Address</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let u of result">
+            <th scope="row">{{u.city_id}}</th>
+            <td>{{u.user_name}}</td>
+            <td>{{u.user_email}}</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <ng-template #loading>
+        <div class="d-flex justify-content-center">
+          <div class="loader">Loading...</div>
+        </div>
+      </ng-template>
+    </div>
+
+  </div>
+</div>
+
+<div class="row">
+  <div class="col">
+
+  </div>
+</div>
+
+
+
+
+
+
+

@@ -1,0 +1,73 @@
+/* You can add global styles to this file, and also import other style files */
+
+/*@import url('https://fonts.googleapi.com/css?family=Nunito:400,700&display=swap');*/
+
+@import "../node_modules/bootstrap-scss/bootstrap.scss";
+
+$fa-font-path: "~font-awesome/fonts";
+@import "~font-awesome/scss/font-awesome";
+
+
+$primary: gray;
+
+/*body {
+  margin: 0;
+  font-family: 'Nunito',sans-serif;
+  font-size: 10px;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}*/
+
+header {
+  background: $primary;
+  padding: 1em 0;
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+
+  a.logo {
+    font-weight: bold;
+  }
+
+  a.login {
+    color: darkorange;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  nav {
+    float: right;
+
+    ul {
+      list-style: none;
+      margin: 0;
+      display: flex;
+
+      li a {
+        padding: 1em;
+
+        &:hover {
+          background: darken($primary,10%);
+        }
+      }
+    }
+  }
+}
+
+h1 {
+  margin-top: 2em;
+}
+
+.myheader {
+  padding: 2rem .5rem;
+  margin-bottom: 1rem;
+  background-color: #e9ecef;
+  border-radius: 0.9rem;
+  text-align:center;
+  vertical-align:middle;
+}
